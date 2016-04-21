@@ -25,11 +25,11 @@ done
 copysyslinux () {
     BASE_DIR="$PWD"
     mkdir -p /usr/share/syslinux/themes/
-    git clone https://github.com/spottech/syslinux-themes-elementary-loki.git
-    cd syslinux-themes-elementary-loki
+    git clone https://github.com/spottech/syslinux-themes-elementary.git
+    cd syslinux-themes-elementary
     cp -R themes/elementary-loki /usr/share/syslinux/themes/
     cd $BASE_DIR 
-    rm -rf syslinux-themes-elementary-loki/
+    rm -rf syslinux-themes-elementary/
 }
 
 removesyslinux () {
