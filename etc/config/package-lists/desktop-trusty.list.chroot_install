@@ -1,0 +1,50 @@
+# separated because live-build does not support nested conditionals
+#if ARCHITECTURES amd64
+linux-signed-generic-lts-vivid
+linux-signed-image-generic-lts-vivid
+#endif
+
+#if DISTRIBUTION trusty
+
+# LTS Enablement Stack
+libgl1-mesa-glx-lts-vivid
+libgles1-mesa-lts-vivid
+linux-generic-lts-vivid
+xserver-xorg-core-lts-vivid
+xserver-xorg-input-all-lts-vivid
+xserver-xorg-input-evdev-lts-vivid
+xserver-xorg-lts-vivid
+xserver-xorg-video-all-lts-vivid
+
+# elementary-desktop packages that are ignored for unknown reasons
+audience
+gala
+indicator-bluetooth
+maya-calendar
+pantheon-greeter
+switchboard
+switchboard-gnome-control-center-override
+switchboard-plug-display
+switchboard-plug-gcc-bluetooth
+switchboard-plug-gcc-color
+switchboard-plug-gcc-mouse
+switchboard-plug-gcc-network
+switchboard-plug-gcc-printer
+switchboard-plug-gcc-sound
+switchboard-plug-gcc-ua
+switchboard-plug-gcc-wacom
+switchboard-plug-notifications
+switchboard-plug-pantheon-shell
+
+# dependencies of packages that are ignored for unknown reasons
+gnome-control-center
+libchamplain-0.12-0
+libchamplain-gtk-0.12-0
+libclutter-1.0-0
+libclutter-gtk-1.0-0
+libcogl-pango15
+libcogl15
+libgala0
+libmutter0d
+
+#endif
