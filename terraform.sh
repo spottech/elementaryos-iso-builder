@@ -27,7 +27,7 @@ copysyslinux () {
     mkdir -p /usr/share/syslinux/themes/
     git clone https://github.com/spottech/syslinux-themes-elementary-loki.git
     cd syslinux-themes-elementary-loki
-    cp -R themes/budgie-remix /usr/share/syslinux/themes/
+    cp -R themes/elementary-loki /usr/share/syslinux/themes/
     cd $BASE_DIR 
     rm -rf syslinux-themes-elementary-loki/
 }
